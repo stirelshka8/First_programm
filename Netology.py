@@ -249,14 +249,9 @@ def user_input():
             os.system("clear")
             print("\033[3m\033[33m\033[41m{}\033[0m".format("Работа программы завершена!"))
             break
-        elif launch_command == '':
-            os.system("clear")
-            print("\033[3m\033[33m\033[41m{}\033[0m".format("Введен пустой запрос!"))
-            user_input()
         else:
             os.system("clear")
             print("\033[3m\033[33m\033[41m{}\033[0m".format("Введена неверная команда! Повторите запрос."))
-            user_input()
 # Вызываем родительскую функцию
 #user_input()
 
