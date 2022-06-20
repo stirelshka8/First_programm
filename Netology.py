@@ -179,6 +179,7 @@ def add_place(search_location_directories):
 def user_input():
     # Этой командой отправляем в команду напрямую в командную строку которая очищает консоль
     while True:
+        os.system("clear")
         print("\033[31m{}\033[0m".format("""
         ***********************************************************************************************************
         Команды:
@@ -197,60 +198,51 @@ def user_input():
         launch_command = input("\033[34m{}\033[0m".format("Введите команду >>> "))
         print()
         if launch_command == 'p':
-            os.system("clear")
             print("\033[32m\033[42m{}\033[0m".format("Выбран параметр поиска человека по номеру документа"))
             print()
             document_search(search_location = documents)
             print()
             print()
         elif launch_command == 's':
-            os.system("clear")
             print("\033[32m\033[42m{}\033[0m".format("Выбран параметр поиска полки на которой хранятся документы по номеру документа"))
             print()
             document_location(search_location = directories)
             print()
             print()
         elif launch_command == 'l':
-            os.system("clear")
             print("\033[32m\033[42m{}\033[0m".format("Выбран параметр вывода всего словаря"))
             print()
             whole_dictionary(search_location = documents)
             print()
             print()
         elif launch_command == 'a':
-            os.system("clear")
             print("\033[32m\033[42m{}\033[0m".format("Выбран параметр добавления документа"))
             print()
             adding_document(search_location_documents = documents, search_location_directories=directories)
             print()
             print()
         elif launch_command == 'd':
-            os.system("clear")
             print("\033[32m\033[42m{}\033[0m".format("Выбран параметр удаления документа"))
             print()
             deleting_document(search_location_documents = documents, search_location_directories=directories)
             print()
             print()
         elif launch_command == 'm':
-            os.system("clear")
             print("\033[32m\033[42m{}\033[0m".format("Выбран параметр перемещения документа"))
             print()
             moving_document(search_location_directories = directories)
             print()
             print()
         elif launch_command == 'as':
-            os.system("clear")
             print("\033[32m\033[42m{}\033[0m".format("Выбран параметр добавления новой полки"))
             print()
             add_place(search_location_directories = directories)
             print()
             print()
         elif launch_command == 'q':
-            os.system("clear")
             print("\033[3m\033[33m\033[41m{}\033[0m".format("Работа программы завершена!"))
             break
         else:
-            os.system("clear")
             print("\033[3m\033[33m\033[41m{}\033[0m".format("Введена неверная команда! Повторите запрос."))
 # Вызываем родительскую функцию
 #user_input()
