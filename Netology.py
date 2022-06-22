@@ -1,6 +1,7 @@
 import os
 from colorama import Fore, Back, Style
-
+print("Author: @stirelshka8")
+os.system("clear")
 
 documents = [
     {"type": "passport", "number": "2207 876234", "name": "Василий Гупкин"},
