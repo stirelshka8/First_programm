@@ -1,6 +1,13 @@
 import os
+import time
 from colorama import Fore, Back, Style
-print("Author: @stirelshka8")
+from art import tprint
+
+# Код ниже не нужен от слова совсем) Но так как я учусь, то пусть будет
+print("[+] promramm is starting ...")
+time.sleep(3)
+tprint("FP by Python")
+time.sleep(3)
 os.system("clear")
 
 documents = [
@@ -180,7 +187,6 @@ def add_place(search_location_directories):
 def user_input():
     # Этой командой отправляем в команду напрямую в командную строку которая очищает консоль
     while True:
-        os.system("clear")
         print("\033[31m{}\033[0m".format("""
         ***********************************************************************************************************
         Команды:
@@ -250,4 +256,3 @@ def user_input():
 
 if __name__ == '__main__':
     user_input()
-  
