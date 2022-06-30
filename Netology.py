@@ -4,19 +4,22 @@ from colorama import Fore, Back, Style
 from art import tprint
 
 # Код ниже не нужен от слова совсем) Но так как я учусь, то пусть будет
-os.system("clear")
-print("\033[31m{}\033[0m".format("[+] start subproces ..."))
-time.sleep(3)
-print("\033[31m{}\033[0m".format("[+] initialization AI ..."))
-time.sleep(3)
-print("\033[31m{}\033[0m".format("[+] welcome to the club ..."))
-time.sleep(3)
-print("\033[31m{}\033[0m".format("[+] promramm is starting ..."))
-time.sleep(3)
-os.system("clear")
-tprint("FP by Python")
-time.sleep(3)
-os.system("clear")
+start_id = 0
+
+if start_id == 1:
+    os.system("clear")
+    print("\033[31m{}\033[0m".format("[+] start subproces ..."))
+    time.sleep(3)
+    print("\033[31m{}\033[0m".format("[+] initialization AI ..."))
+    time.sleep(3)
+    print("\033[31m{}\033[0m".format("[+] welcome to the club ..."))
+    time.sleep(3)
+    print("\033[31m{}\033[0m".format("[+] promramm is starting ..."))
+    time.sleep(3)
+    os.system("clear")
+    tprint("FP by Python")
+    time.sleep(3)
+    os.system("clear")
 
 documents = [
     {"type": "passport", "number": "2207 876234", "name": "Василий Гупкин"},
